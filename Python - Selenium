@@ -1,11 +1,10 @@
 /*
-Data Download Automation
 
-Skills used: iteration, 
+Data Download Automation
 
 /*
 
-# Import necessary libraries
+# Import necessary modules
 
 import os
 
@@ -65,9 +64,7 @@ image_elements = driver.find_elements(By.TAG_NAME, 'img')
 # Iterate through the found image_elements
 
 for index, image_element in enumerate(tqdm(image_elements)):# Added progress bar 
-
     # Get url of the image
-
     image_src = image_element.get_attribute('src')
     dic_img[index] = image_src
     #print(f'{index} added' )
@@ -86,9 +83,7 @@ titles = driver.find_elements(By.TAG_NAME, 'img')
 # Iterate through the found image_elements
 
 for index, title in enumerate(tqdm(titles, desc= 'Loading titles...')):# Added progress bar with description
-
     # Get title of the image
-
     image_title = title.get_attribute('alt')
     dic_title[index] = image_title
     
@@ -103,9 +98,7 @@ links = driver.find_elements(By.TAG_NAME, 'a')
 # Iterate through the found link elements
 
 for index, link in enumerate(tqdm(links, desc= 'Loading links...')):# Added progress bar with description
-
     # Get the url
-
     link_comp = link.get_attribute('href')
     dic_link[index] = link_comp
     #print(f'{index} added' )
@@ -140,7 +133,7 @@ df3= pd.DataFrame.from_dict(dic_title, orient= 'index')
 
 df = pd.concat([df1, df2, df3], axis=1)
 
-# print(df.head())# Check
+# print(df.head())# Additional check
 
 # Save to a CSV file
 
