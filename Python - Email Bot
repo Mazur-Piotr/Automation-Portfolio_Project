@@ -1,11 +1,8 @@
 /*
 Email Send Automation
-
-Skills used: iteration, 
-
 /*
 
-# Import necessary libraries
+# Import necessary modules
 
 import smtplib
 from email.mime.multipart import MIMEMultipart
@@ -37,7 +34,6 @@ with open('mail.txt', 'r') as file:
 
 email_recipients = list(mail_list['email'])
 
-    
 # Function to send emails
 
 def send_email(subject, message, recipient_email):
@@ -66,7 +62,6 @@ def send_email(subject, message, recipient_email):
     
     connection.send_message(mimemsg)
     connection.quit()
-
 
 # Loop to send emails to all recipients
 
