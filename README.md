@@ -8,11 +8,8 @@ The Data Download Automation script automates the process of downloading images,
 
 ### Usage
 1. Ensure you have the necessary modules installed (e.g., Selenium, requests, pandas, tqdm).
-
 2. Modify the script's configuration, including the website URL and file paths.
-
 3. Run the script to download the data.
-
 4. The downloaded data is stored in CSV format (Output_list.csv) for further analysis or usage.
 
 ## Email Send Automation
@@ -21,15 +18,10 @@ The Email Send Automation script automates the process of sending customized ema
 
 ### Usage
 1. Ensure you have the necessary modules installed (e.g., smtplib, email.mime).
-
 2. Update the script with your email credentials (username and password) and configure the email subject and content.
-
 3. Create a CSV file (mail_list.csv) containing recipient information (name, company, email address).
-
 4. Create an email template in a text file (mail.txt) with placeholders for recipient-specific data (e.g., +++person+++ and +++company_name+++).
-
 5. Run the script to send personalized emails to the recipients in the CSV file.
-
 6. Check the recipients' inboxes for the sent emails.
 
 ## Requirements
