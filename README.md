@@ -28,21 +28,7 @@ The Email Send Automation script automates the process of sending customized ema
 - Python 3.x
 - Relevant Python libraries (see script comments for details)
 - Google Chrome (for the Data Download Automation script)
-## Project Structure
-Copy code
-Project/
-│
-├── Data_Download_Automation/
-│   ├── data_download.py
-│   └── chromedriver.exe
-│
-├── Email_Send_Automation/
-│   ├── email_send.py
-│   ├── mail_list.csv
-│   ├── mail.txt
-│   └── Your_folder/
-│
-└── README.md
+
 ## Notes
 - Ensure that you have the appropriate web drivers for Selenium (e.g., chromedriver.exe) in the respective project directories.
 - Customize the scripts, email templates, and configurations to meet your specific needs.
