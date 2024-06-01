@@ -30,6 +30,6 @@ The Email Send Automation script automates the process of sending customized ema
 - Google Chrome (for the Data Download Automation script)
 
 ## Notes
-- Ensure that you have the appropriate web drivers for Selenium (e.g., chromedriver.exe) in the respective project directories.
-- Customize the scripts, email templates, and configurations to meet your specific needs.
-- Be cautious when handling email credentials and sensitive data.
+- Ensure that you have the appropriate web drivers for Selenium (e.g., chromedriver.exe) in the respective project directories
+- Customize the scripts, email templates, and configurations to meet your specific needs
+- Be cautious when handling email credentials and sensitive data
